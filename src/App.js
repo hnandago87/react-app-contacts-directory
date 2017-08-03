@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import ListContact from './ListContacts';
 import CreateContact from './CreateContact';
+import miscComponent from './miscComponent';
 import * as ContactsAPI from './utils/ContactsAPI';
 
 
@@ -52,6 +53,7 @@ class App extends Component {
              />
            )}
           />
+          <Route exact path="/misc" component={miscComponent} />
       </div>
     )
     }
